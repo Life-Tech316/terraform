@@ -1,6 +1,6 @@
-#-----------
+#--------------
 # key-pair
-#-----------
+#--------------
 resource "aws_key_pair" "key_pair" {
   key_name   = "${var.project}-${var.environment}-key-pair"
   public_key = file("./src/tastylog-dev-keypair.pub")
